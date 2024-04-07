@@ -237,13 +237,12 @@ const Chat = ({ chatId, user }) => {
           <IconButton
             type="submit"
             sx={{
-              rotate: "-30deg",
               bgcolor: orange,
               color: "white",
               marginLeft: "1rem",
               padding: "0.5rem",
               "&:hover": {
-                bgcolor: "error.dark",
+                bgcolor: "rgb(18,140,126, 0.8)",
               },
             }}
           >

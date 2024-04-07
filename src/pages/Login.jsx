@@ -24,6 +24,8 @@ const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
 
+  console.log(server);
+
   const toggleLogin = () => setIsLogin((prev) => !prev);
 
   const name = useInputValidation("");
@@ -65,6 +67,7 @@ const Login = () => {
       toast.error(error?.response?.data?.message || "Something Went Wrong", {
         id: toastId,
       });
+      console.log(error);
     } finally {
       setIsLoading(false);
     }
@@ -113,7 +116,7 @@ const Login = () => {
   return (
     <div
       style={{
-        backgroundImage: bgGradient,
+        // backgroundImage: bgGradient,
       }}
     >
       <Container

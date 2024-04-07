@@ -86,9 +86,10 @@ const Header = () => {
               variant="h6"
               sx={{
                 display: { xs: "none", sm: "block" },
+                fontWeight: "700"
               }}
             >
-              Chattu
+              ChitChat
             </Typography>
 
             <Box

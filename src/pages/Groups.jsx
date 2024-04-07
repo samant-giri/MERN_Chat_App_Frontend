@@ -24,7 +24,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { LayoutLoader } from "../components/layout/Loaders";
 import AvatarCard from "../components/shared/AvatarCard";
 import { Link } from "../components/styles/StyledComponents";
-import { bgGradient, matBlack } from "../constants/color";
+import { bgGradient, matBlack, orange } from "../constants/color";
 import { useDispatch, useSelector } from "react-redux";
 import UserItem from "../components/shared/UserItem";
 import { useAsyncMutation, useErrors } from "../hooks/hook";
@@ -179,7 +179,7 @@ const Groups = () => {
         </IconButton>
       </Box>
 
-      <Tooltip title="back">
+      <Tooltip title="Back">
         <IconButton
           sx={{
             position: "absolute",
@@ -385,7 +385,7 @@ const GroupsList = ({ w = "100%", myGroups = [], chatId }) => (
   <Stack
     width={w}
     sx={{
-      backgroundImage: bgGradient,
+      backgroundColor: bgGradient,
       height: "100vh",
       overflow: "auto",
     }}
@@ -395,7 +395,7 @@ const GroupsList = ({ w = "100%", myGroups = [], chatId }) => (
         <GroupListItem group={group} chatId={chatId} key={group._id} />
       ))
     ) : (
-      <Typography textAlign={"center"} padding="1rem">
+      <Typography color={"white"} textAlign={"center"} padding="1rem">
         No groups
       </Typography>
     )}
