@@ -7,3 +7,5 @@ The best way you can access and check its functionalities by registering yoursel
 Then you will be able to chat.
 
 Link : https://mern-chat-app-frontend-mauve.vercel.app/
+
+Note: Email and usernmae should be unique.
